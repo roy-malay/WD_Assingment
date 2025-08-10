@@ -22,7 +22,7 @@ body {
 
 .box {
   background: #fff;
-  border-radius: 12px;
+/*   border-radius: 12px; */
   padding: 20px 25px 30px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -147,4 +147,5 @@ body {
 
 .active-form {
   display: block;
+
 }
