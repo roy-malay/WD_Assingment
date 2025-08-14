@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background: linear-gradient( 135deg,#7F8CAA, #333446);
 }
 
 /* ===== Container Styling ===== */
@@ -58,7 +58,7 @@ body {
   left: 0;
   width: 50%;
   height: 3px;
-  background: #2575fc;
+  background: #333446;
   border-radius: 10px;
   transition: left 0.3s ease;
 }
@@ -111,7 +111,7 @@ body {
 }
 
 .submit {
-  background: #2575fc;
+  background: #7F8CAA;
   color: #fff;
   padding: 10px;
   border: none;
@@ -123,7 +123,7 @@ body {
 }
 
 .submit:hover {
-  background: #1a5edb;
+  background: #333446;
 }
 
 .forget {
@@ -149,3 +149,4 @@ body {
   display: block;
 
 }
+
