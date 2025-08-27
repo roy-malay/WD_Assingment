@@ -15,7 +15,7 @@
           <div class="btn-active" id="btn"></div>
         </div>
         <!-- LOGIN FORM -->
-        <form action="website.html">
+        <form action="website.html" >
           <div class="box-login" id="login">
             <div class="top-header">
               <h3>LOGIN!</h3>
@@ -43,7 +43,7 @@
                 <label for="login_checkbox">Remember Me</label>
               </div>
               <div class="input-field">
-                <input type="submit" class="submit" value="LOGIN" />
+                <input type="submit" class="submit" value="LOGIN" onclick="return checkLogin()"/>
               </div>
               <div class="forget">
                 <a href="#">Forget Password?</a>
@@ -52,7 +52,7 @@
           </div>
         </form>
         <!-- SIGNUP FORM -->
-        <form action="website.html">
+        <form action="website.html" >
           <div class="box-signup" id="signup">
             <div class="top-header">
               <h3>SIGN UP!</h3>
@@ -75,6 +75,15 @@
                   required
                 />
               </div>
+              <div class="input-field">
+                <label for="password">CONFIRM PASSWORD:</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="confirm_password"
+                  required
+                />
+              </div>
               <div class="remember-me">
                 <input
                   type="checkbox"
@@ -84,50 +93,13 @@
                 <label for="signup_checkbox">Remember Me</label>
               </div>
               <div class="input-field">
-                <input type="submit" class="submit" value="SIGN-UP" />
+                <input type="submit" class="submit" value="SIGN-UP" onclick="return checkSignup()"/>
               </div>
             </div>
           </div>
         </form>
       </div>
     </div>
-    <script>
-      // Elements
-      const loginTab =  document.querySelector(".login");
-      const signupTab = document.querySelector(".signup");
-      const loginBox = document.getElementById("login");
-      const signupBox = document.getElementById("signup");
-      const btn = document.getElementById("btn");
-
-      // Initialize: show login by default
-      function showLogin() {
-        loginBox.classList.add("active-form");
-        signupBox.classList.remove("active-form");
-        loginTab.classList.add("active");
-        signupTab.classList.remove("active");
-        btn.style.left = "0";
-      }
-      function showSignup() {
-        signupBox.classList.add("active-form");
-        loginBox.classList.remove("active-form");
-        signupTab.classList.add("active");
-        loginTab.classList.remove("active");
-        btn.style.left = "50%";
-      }
-
-      // Attach event listeners
-      loginTab.addEventListener("click", function (e) {
-        e.preventDefault();
-        showLogin();
-      });
-      signupTab.addEventListener("click", function (e) {
-        e.preventDefault();
-        showSignup();
-      });
-
-      // Optional: Set default state on page load
-      window.addEventListener("DOMContentLoaded", showLogin);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
-
