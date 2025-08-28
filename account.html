@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="website.css" />
+    <title>My Account</title>
+    <link rel="icon" href="asset/logo.png" />
+  </head>
+  <body>
+    <!-- NAVBAR AREA -->
+    <nav
+      class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top"
+      style="background-color: #333446"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="website.html">
+          <img
+            src="asset/logo.png"
+            alt="Goodness Clothes"
+            style="height: 40px; width: auto"
+            class="me-2 rounded"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="website.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mens.html">MEN's</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="womens.html">WOMEN's</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shoes.html">SHOES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="account.html">MY ACCOUNT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- DESCRIPTION AREA -->
+    <div
+      class="p-5 mb-4 bg-light rounded-3"
+      style="
+        background: linear-gradient(250deg, #7f8caa, #333446);
+        color: aliceblue;
+      "
+    >
+      <div class="container-fluid py-5 text-center">
+        <h1 class="display-5 fw-bold">Welcome to Goodness Clothes</h1>
+        <p class="col-md-8 fs-5 mx-auto">
+          Discover the latest fashion trends for Men, Women, and Shoes —
+          stylish, comfortable, and affordable.
+        </p>
+      </div>
+    </div>
+    <!-- ACCOUNT PAGE CONTENT -->
+  <div class="container py-5">
+    <div class="row justify-content-center">
+
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-header bg-dark text-white text-center">
+            <h4 class="mb-0">My Account</h4>
+          </div>
+
+          <div class="card-body">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Name</label>
+              <input type="text" class="form-control" value="Malay Roy" readonly>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control" value="malayroy@gmail.com" readonly>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold">Location</label>
+              <input type="text" class="form-control" value="Kolkata, India" readonly>
+            </div>
+
+            <hr>
+
+            <div class="d-grid gap-2">
+              <button class="btn btn-outline-primary">Settings</button>
+              <button class="btn btn-outline-secondary">Help</button>
+              <a href="index.html" class="btn btn-outline-success">Log Out</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+      <p class="mb-1">Goodness Clothes - Positively Stylish</p>
+      <small>© 2025 Goodness Clothes | All Rights Reserved</small>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
